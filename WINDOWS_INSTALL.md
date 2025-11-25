@@ -95,18 +95,57 @@ Ce guide vous accompagne pas à pas pour installer et utiliser cet environnement
      - `C/C++` (ms-vscode.cpptools)
      - `Docker` (ms-azuretools.vscode-docker)
 
+## 📥 Récupération du projet
+
+### Cloner le projet depuis GitHub
+
+1. **Ouvrir PowerShell ou Terminal Windows**
+
+2. **Naviguer vers le dossier où vous souhaitez travailler**
+   ```powershell
+   # Par exemple, dans vos Documents
+   cd C:\Users\VotreNom\Documents
+   
+   # Ou dans un dossier dédié à vos projets
+   cd C:\Users\VotreNom\Projects
+   ```
+
+3. **Cloner le projet**
+   ```powershell
+   git clone https://github.com/e-baloo/dev-c-docker.git
+   cd dev-c-docker
+   ```
+
+4. **Supprimer l'historique Git (pour créer votre propre projet)**
+   ```powershell
+   # Sous Windows PowerShell
+   Remove-Item -Recurse -Force .git
+   
+   # Ou avec Git Bash
+   rm -rf .git
+   ```
+
+5. **Initialiser votre propre dépôt Git (optionnel)**
+   ```powershell
+   git init
+   git add .
+   git commit -m "Initial commit: Mon projet C"
+   
+   # Si vous voulez le pousser sur votre propre GitHub
+   git remote add origin git@github.com:votre-username/votre-projet.git
+   git branch -M main
+   git push -u origin main
+   ```
+
 ## 🚀 Utilisation du projet
 
 ### Méthode 1: Avec VS Code et Dev Containers (⭐ Recommandé)
 
-1. **Cloner ou ouvrir le projet**
+1. **Ouvrir le projet dans VS Code**
    ```powershell
-   # Cloner le projet (si depuis Git)
-   git clone <url-du-projet>
-   cd <nom-du-projet>
-   
-   # Ou naviguez vers votre dossier de projet
-   cd C:\chemin\vers\votre\projet
+   # Après avoir cloné le projet
+   cd dev-c-docker
+   code .
    ```
 
 2. **Ouvrir dans VS Code**
