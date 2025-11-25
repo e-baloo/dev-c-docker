@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     valgrind \
     git \
     vim \
+    tree \
     && rm -rf /var/lib/apt/lists/*
 
 # Répertoire de travail
