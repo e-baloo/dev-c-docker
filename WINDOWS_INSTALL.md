@@ -174,10 +174,10 @@ Ce guide vous accompagne pas à pas pour installer et utiliser cet environnement
 ### Méthode 2: Avec Docker Compose (Ligne de commande)
 
 1. **Ouvrir PowerShell dans le dossier du projet**
-   - Naviguez vers le dossier:
-     ```powershell
-     cd C:\chemin\vers\votre\projet
-     ```
+   ```powershell
+   # Après avoir cloné le projet
+   cd dev-c-docker
+   ```
 
 2. **Démarrer le conteneur**
    ```powershell
