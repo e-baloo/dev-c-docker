@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "make",
+      "args": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Compilation avec Make"
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "make",
+      "args": ["clean"],
+      "problemMatcher": [],
+      "detail": "Nettoyage des fichiers compilés"
+    },
+    {
+      "label": "run",
+      "type": "shell",
+      "command": "make",
+      "args": ["run"],
+      "dependsOn": ["build"],
+      "problemMatcher": [],
+      "detail": "Compilation et exécution"
+    }
+  ]
+}

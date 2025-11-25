@@ -1,0 +1,25 @@
+{
+  "name": "Environnement Dev C",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "dev-c",
+  "workspaceFolder": "/workspace",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake"
+      ],
+      "settings": {
+        "C_Cpp.default.cStandard": "c11",
+        "C_Cpp.default.compilerPath": "/usr/local/bin/gcc",
+        "C_Cpp.default.intelliSenseMode": "linux-gcc-x64"
+      }
+    }
+  },
+  
+  "postCreateCommand": "gcc --version && gdb --version",
+  "remoteUser": "root"
+}

@@ -1,0 +1,27 @@
+# Fichiers compilés
+*.o
+*.out
+*.exe
+*.a
+*.so
+
+# Répertoires de build
+build/
+bin/
+
+# Fichiers de débogage
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
